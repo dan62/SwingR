@@ -2,7 +2,8 @@
 # SwingR Open Source Cloud Recommender System ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=for-the-badge&label=Stars)
 SwingR is a Machine Learning Cloud Based Recommender System API for real time E-commerce solutions. SwingR utilizes Neural Networks to predict what kind of products the user is looking to purchase. Based on his/her clicking habits we will train our model to predict what to recommend to the user.
 
-## Goals For this Project [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/)
+## Goals For this Project ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
+
 - Develop a user freindly API list of endpoints which e-commerce platforms can easily implement into their systems 
 - Experiment with multiple neural network architectures for recommendation, the e-commerce platform should have the ability to choose the kind of neural network they would like to use
 - Perform multiple data transformations and store procedures, to ensure a better recommendation each time a user utilizes the eccomerce website
@@ -25,7 +26,7 @@ The following are some API endpoints that we are working to implement in near du
 
 **http://yourdomain.com/feed/**   - This endpoint should be sent a POST request containing the following JSON:
 
-'''
+```
 {
     "user_id":"34sd",
     "user_sessison":"123w",
@@ -53,7 +54,7 @@ The following are some API endpoints that we are working to implement in near du
     }
 ]
 }
-'''
+```
 
 **http://yourdomain.com/suggest/{user_id}**   - This endpoint should be sent a GET request with the user id such that the system can scan for available sugegstions for that user, before a suggestion is ready a user must have had at least 100 search entries registered in the system, after which this endpoint can be called after a specified number of minutes
 
