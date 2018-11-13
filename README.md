@@ -78,7 +78,7 @@ This project what initially started by myself and @aakashsplinter, we have creat
 
 Please feel free to create issues and push code to this respository as and when you like, we always like adding new ideas to this respository to ensure  a mix of ideas and functionality. Please ensure you make detailed commits so that we have an idea of what you where trying to achieve, before pushing to production Branch.
 
-## Versioning 
-Please utilize the versioning methodology found in this respositiory https://github.com/GitTools/GitVersion
+## Versioning ![ver](https://img.shields.io/badge/versioning-sermver-blue.svg)
+Please utilize the versioning methodology found in this respositiory https://semver.org/
 
 
