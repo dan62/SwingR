@@ -1,5 +1,5 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-# SwingR Open Source Cloud Recommender System ![Docker Automated build](https://img.shields.io/docker/automated/:user/:repo.svg?style=popout-square)
+# SwingR Open Source Cloud Recommender System
 SwingR is a Machine Learning Cloud Based Recommender System API for real time E-commerce solutions. SwingR utilizes Neural Networks to predict what kind of products the user is looking to purchase. Based on his/her clicking habits we will train our model to predict what to recommend to the user.
 
 ## Goals For this Project ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
@@ -12,7 +12,7 @@ SwingR is a Machine Learning Cloud Based Recommender System API for real time E-
 - Implement a Javascript cdn hotlink for web developers to utilize in their HTML scripts
 - Implement multiple factor suggestions Descision Trees + Neural Networks 
 
-## Prerequizits ![pre](https://img.shields.io/badge/prerequizits-optional-green.svg)
+## Prerequizits ![pre](https://img.shields.io/badge/prerequizits-optional-blue.svg)
 - Knowllege about Tensorflow 
 - Python Basics
 - REST API implementation 
