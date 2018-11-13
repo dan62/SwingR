@@ -59,7 +59,8 @@ The following are some API endpoints that we are working to implement in near du
 **http://yourdomain.com/suggest/{user_id}**   - This endpoint should be sent a GET request with the user id such that the system can scan for available sugegstions for that user, before a suggestion is ready a user must have had at least 100 search entries registered in the system, after which this endpoint can be called after a specified number of minutes
 
 
-## Authors ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=for-the-badge&label=Stars)
+## Authors ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=popout-square&label=Stars)
+
 
 This project what initially started by myself and @aakashsplinter, we have created this project with the intention of creating a community based open source project which we all can commit to and benifit from using and exandiing your skillset. 
 
