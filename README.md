@@ -1,5 +1,5 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-# SwingR Open Source Cloud Recommender System ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=for-the-badge&label=Stars)
+# SwingR Open Source Cloud Recommender System ![Docker Automated build](https://img.shields.io/docker/automated/:user/:repo.svg?style=popout-square)
 SwingR is a Machine Learning Cloud Based Recommender System API for real time E-commerce solutions. SwingR utilizes Neural Networks to predict what kind of products the user is looking to purchase. Based on his/her clicking habits we will train our model to predict what to recommend to the user.
 
 ## Goals For this Project ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
@@ -12,7 +12,7 @@ SwingR is a Machine Learning Cloud Based Recommender System API for real time E-
 - Implement a Javascript cdn hotlink for web developers to utilize in their HTML scripts
 - Implement multiple factor suggestions Descision Trees + Neural Networks 
 
-## Prerequizits
+## Prerequizits ![pre](https://img.shields.io/badge/prerequizits-optional-green.svg)
 - Knowllege about Tensorflow 
 - Python Basics
 - REST API implementation 
@@ -20,6 +20,16 @@ SwingR is a Machine Learning Cloud Based Recommender System API for real time E-
 - Neural Networks 
 - Google Cloud Services
 - Mathematics (Calculus and Lineer Algebra)
+
+## Getting Started (Development) ![David](https://img.shields.io/david/dev/expressjs/express.svg?style=popout-square)
+
+There are multiple dependencies to install, please install the follwoing and then run ```python start.py```
+- Tensorflow
+- Numpy
+- Flask
+- sqllite3
+- csv
+- MongoDB
 
 ## API endpoints [![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://github.com/Naereen/StrapDown.js)
 The following are some API endpoints that we are working to implement in near duture some have been iplmented already:
