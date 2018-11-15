@@ -1,0 +1,11 @@
+{
+  "username":"TestUser",
+  "your_platform_name":"John Doe Ecommerce Store",
+  "save_data_type":".csv",
+  "cloud_service":"dropbox",
+  "dropbox_credentials":{
+      "app_folder_name":"SwingR",
+      "app_key":"vfbpi8cfixz3k5t",
+      "app_secret":"gb9o5jyo40ul7xn"
+  }
+}

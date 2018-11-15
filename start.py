@@ -1,8 +1,11 @@
 #!flask/bin/python
-from flask import Flask, jsonify
+import requests
+from flask import Flask, jsonify, request
+
+import signal_notify
+import write_feed
 
 app = Flask(__name__)
-
 
 # this is how the json should look when the results of recommendations are returned to the E-commerce wensite
 recommended = [
@@ -12,7 +15,7 @@ recommended = [
         'product': u'quaadrocopter for children',
         'description': u'childrens toys, 9-10 years old, mothers ',
         'link': u'https://www.lazada.co.th/products/tello-drone-phantom-thailand-i223434133-s341325619.html?spm=a2o4m.searchlist.list.1.5f631286ESdyAo&search=1',
-        'image':u'https://th-live.slatic.net/original/12ce6c5d0f8936b880758225aa3ef395.jpg',
+        'image': u'https://th-live.slatic.net/original/12ce6c5d0f8936b880758225aa3ef395.jpg',
     },
     {
         'id': 1,
@@ -33,14 +36,19 @@ successful_feed = [
     }]
 
 
-
 # in future will check if theres available recommendations from training
-def check_cloud():
+def search_cloud(id):
     return 0
 
 
-# in future will save data that was fed to api
-def save_feed():
+# Performs formatting of the data and eventually saving to the cloud
+def save_feed(s):
+    settings_location = "C:/Users/danie/Documents/GitHub/SwingR/settings.json"
+    stream_feed = s
+    write_feed.display_welcome()
+    if not s == "":
+      signal_notify.post_recieved_success()
+      write_feed.check_settings(stream_feed, settings_location)
     return 0
 
 
@@ -54,16 +62,23 @@ def nn_train():
     return 0
 
 
-# declaration of API routes
-@app.route('/suggest', methods=['GET'])
-def get_recommendations():
-    check_cloud()
+# Recommendations Endpoint
+@app.route('/suggest/<user_id>', methods=['GET'])
+def get_recommendations(user_id):
+    search_cloud(user_id)
     return jsonify({'recommended': recommended})
 
 
-@app.route('/feed', methods=['GET'])
+# Training data feed endpoint
+@app.route('/feed/', methods=['GET', 'POST'])
 def feed_for_training():
-    save_feed()
+    stream_data = request.get_json(force=True)
+
+    #uncomment this line if you do not want to post real JSON for testing
+    #stream_data="test"
+
+    if not stream_data == "":
+        save_feed(stream_data)
     return jsonify({'feed_response': successful_feed})
 
 
